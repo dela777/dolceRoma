@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dolce Roma</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Caladea' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
+<script src="parallax.min.js/parallax.min.js"></script>
+  <style>
+  	html{
+  		scroll-behavior: smooth;
+  	}
+  	
+  	.parallax {
+    min-height: 500px;
+    background: transparent;
+
+}
+.parallax2 {
+	margin-top: 200px;
+	margin-bottom: 100px;
+	min-height: 500px;
+	background: transparent;
+}
+.pText{
+	padding-top: 150px;
+
+	
+	text-align: center;
+	
+	z-index: 2;
+	position: relative;
+	color:white;
+}
+.pText h1{
+	font-family: 'Caladea';
+	
+	font-size: 60px;
+	text-shadow: 3px 3px 3px black;
+}
+#navBar{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Alex Brush';
+	font-size: 30px; 
+	font-weight: bold; 
+	color: darkgrey;
+
+}
+#navBar a{
+padding-top: 60px;
+color: grey;
+}
+#navBar img{
+	height: 150px;
+}
+#navBar a:hover{
+	color: #d0af50;
+	transform: scale(1.2);
+	transition: all .2s;
+	text-decoration: underline;
+	cursor: pointer;
+}
+#navBar img:hover{
+	transition: all .7s ease-in-out;
+	transform: scale(2);
+}
+#infoContent{
+	padding-top: 40px;
+	font-family: 'Courgette';
+	text-align: center;
+}
+.infoHeader{
+	
+	font-family: 'Courgette';
+	text-align: center;
+	font-size: 60px;
+color: #d0af50;
+text-shadow: 1px 1px 1px darkgrey;
+
+}
+.infoImage{
+	opacity: 0;
+	/*min-height: 400px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	 /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 6px 0 rgba(0, 0, 0, 0.7);*/
+	 transition: all .7s;
+}
+.activeImage{
+opacity: 1;
+	min-height: 400px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 6px 0 rgba(0, 0, 0, 0.7);
+}
+.infoText{
+	min-height: 400px;
+	text-align: center;
+	color: grey;
+	font-size: 20px;
+	font-family: 'Courgette';
+/*	text-shadow: 1px 1px 3px grey;*/
+}
+#mediaIcons a{
+	padding-left: 20px;
+	color: white;
+	text-decoration: none;
+}
+.hrefClass {
+color: #d0af50; 
+margin-left: 15px; 
+font-size: 27px;
+text-decoration: none;	
+}
+.spanClass{
+font-size: 50px; 
+color:#d0af50; 	
+}
+.infoDiv{
+border: 4px solid #d0af50; 
+min-height: 120px; 
+margin-left: 3px;
+margin-right: 3px;
+ margin-top: 30px;
+}
+/*.infoDiv:hover{
+	background: white;
+
+	
+}*/
+h1:hover{
+	transition: all .5s;
+transform: scale(1.2);
+}
+
+#footer a:hover{
+	text-decoration: none;
+	background: white;
+
+}
+#footer a:active{
+	background: lightgrey;
+}
+#mediaIc a{
+	height: 80px; 
+	width: 80px; 
+	border: 4px solid #d0af50; 
+	border-radius: 50%;
+	 margin-left: 20px;
+}
+#mediaIc span{
+	font-size: 40px;
+	color: #d0af50;
+}
+
+  </style>
+</head>
+
+<body>
+	<!-- navigation section -->
+	<div class="container" id="navBar" >
+	<div class="row ">
+		<a class="col-sm-2" href="#navBar">Home</a>
+		<a class="col-sm-2">Gallery</a>
+		<div class="col-sm-4"><img src="images/logo.jpg"></div>
+		<a class="col-sm-2" href="#info">About us</a>
+		<a class="col-sm-2" href="#footer">Contact</a>
+	</div>
+
+	</div>
+	<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="images/dolceRoma.jpg">
+		<div class="pText">
+		<h1>VJEROVATNO NAJBOLJE </h1>
+		<h1>SLATKO U GRADU...</h1>
+	</div>
+	</div>
+
+	
+	<h1 id="info" class="infoHeader" style="margin-top: 100px; margin-bottom: 100px;">Naša slatka priča...</h1>
+	<hr>
+
+	<!-- info section -->
+	<div class="container-fluid">
+<div id="infoContent">
+	
+
+<div class="row">
+	<div class="col-sm-4 infoImage" style="background-image: url('images/torta1.jpg');"></div>
+	
+	<div class="col-sm-4 infoText d-flex align-items-center">
+		<p>Malo je onih koji mogu da se pohvale činjenicom da rade ono što i vole. Ako voliš ono što radiš, onda to radiš srcem, s osmijehom i s puno ljubavi. Iz jedne takve ljubavi rodila se Dolce Roma, carstvo torti i kolača posebno pripremanih za sve one koji znaju da uživaju u okusima.</p>
+	</div>
+	
+	<div class="col-sm-4 infoImage" style="background-image: url('images/torta2.jpg');"></div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-4 infoText d-flex align-items-center">
+		<p> Naše torte i kolači ne sadrže vještačka bojila i arome, niti hemijske dodatke. Pripremamo ih za vas po narudžbi uvijek svježe, po želji bez glutena, bez brašna i šećera.</p>
+	</div>
+	
+	<div class="col-sm-4 infoImage" style="background-image: url('images/torta3.jpg');"></div>
+	
+	<div class="col-sm-4 infoText d-flex align-items-center">
+		<p>Naši tradicionalni i novi recepti, kolači i torte sadrže samo prirodne sastojke. Sušeno voće, orah, badem, lješnjak, indijski orah... jabuka, ali domaća, naša neprskana, med i drugi zdravi proizvodi.
+		Radujemo se zajedničkim slatkim pričama iz naše slatke radionice,
+		Vaša Dolce Roma.</p>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="parallax2" data-parallax="scroll" data-z-index="1" data-image-src="images/image9.jpeg"></div>
+  <!-- the footer section -->
+  <div class="container-fluid">
+  	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11506.363573555782!2d18.4127743!3d43.8643075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f89f9344bcf00f2!2sDolce%20roma!5e0!3m2!1sen!2sba!4v1583931645861!5m2!1sen!2sba" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+<div id="footer" class="container-fluid" style=" background: #1e1e1e; padding-top: 40px; padding-bottom: 40px;">
+	
+	<div >
+<div class="row d-flex justify-content-center">
+	<a  href="tel: +38733222207"  class="col-sm-3 d-flex justify-content-center align-items-center infoDiv">
+	<span class="fa fa-phone spanClass"></span><p class="hrefClass">CONTACT US</p>	
+	</a>
+	<a  href="mailto: #"  class="col-sm-3 d-flex justify-content-center align-items-center infoDiv">
+	<span class="fa fa-envelope spanClass"></span><p class="hrefClass">CONTACT US</p>	
+	</a>
+	
+	<div id="mediaIc" class="col-sm-3 d-flex justify-content-center align-items-center infoDiv" >
+		<a class=" d-flex justify-content-center align-items-center" href="https://www.facebook.com/pg/dolceromasarajevo/photos/?ref=page_internal"><span class="fa fa-facebook"></span></a>
+		<a  class=" d-flex justify-content-center align-items-center"><span class="fa fa-instagram"></span></a>
+		<a  class=" d-flex justify-content-center align-items-center"><span class="fa fa-tripadvisor"></span></a>
+		
+	</div>
+</div>
+</div>
+</div>
+	
+</div>
+<script type="text/javascript">
+		
+	window.addEventListener('scroll',function(){
+		let infoContent = document.getElementById('infoContent');
+	let infoImages = document.querySelectorAll('.infoImage');
+
+		
+		if(  window.scrollY + window.innerHeight - 200  > infoContent.offsetTop){
+			infoImages.forEach( img => {
+				img.classList.add('activeImage');
+				
+			});
+			
+		}
+	});
+
+	
+
+
+</script>
+</body>
+
+</html>
